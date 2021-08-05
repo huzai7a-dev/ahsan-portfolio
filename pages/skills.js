@@ -1,3 +1,4 @@
+import handleViewport from "react-in-viewport";
 import Experience from "../Components/Skills/Experience";
 import SkillsContent from "../Components/Skills/SkillsContent";
 import SkillsStatus from "../Components/Skills/SkillsStatus";
