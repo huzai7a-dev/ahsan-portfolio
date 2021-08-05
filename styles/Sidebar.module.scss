@@ -1,0 +1,36 @@
+@import '../styles/variable.scss';
+
+.sidebar{
+    height: 100vh;
+    width: 250px;
+    background: $primary;
+    position: fixed;
+    top: 0;
+    transition: .5s;
+    left: -250px;
+    z-index: 1000;
+    border-right: 1px solid $light;
+    .social__icons__container{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0px;
+        .sidebar__icons{
+            width: 30px;
+            height: 30px;
+            color: #fff;
+        }
+    }
+    
+    .sidebar__link__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        .sidebar__buttons{
+            width: 200px;
+            background: $light;
+            margin: 10px 0px;
+            color: $cyan;
+        }
+    }
+}

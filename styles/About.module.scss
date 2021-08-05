@@ -1,0 +1,57 @@
+@import '../styles/variable.scss';
+.about {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    .about__info {
+        font-family: $primaryFont;
+        width: 500px;
+        padding: 0px 5px;
+            .htmlTag{
+                margin-left: 10px;
+            }
+            .bodyTag {
+                margin-left: 20px;
+            }
+            .h1Tag, .pTag{
+                margin-left: 30px;
+            }
+            .name {
+                margin-left: 40px;
+                color: $cyan;
+                letter-spacing: .3px;
+            }
+            .position {
+                margin-left: 50px;
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: 500;
+                letter-spacing: .3px;
+                line-height: 1.5;
+                text-align: justify;
+            }
+    }
+    .about__lang {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    .techText{
+        color: $cyan;
+        font-family: $primaryFont;
+        font-weight: 800;
+        font-size: 2rem;
+        opacity: .1;
+        position: absolute;
+        display: block;
+    }
+    }
+}

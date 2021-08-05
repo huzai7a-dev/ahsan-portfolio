@@ -1,0 +1,179 @@
+@import '../styles/variable.scss';
+html,
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.tag {
+  font-family: $cursiveFont !important;
+  font-size: 1.2rem;
+  color:$light;
+}
+.langIcon {
+  position: absolute;
+  display: block;
+  opacity: .7;
+}
+.langIcon:nth-child(1){
+  left: 10%;
+  animation: animate 15s linear infinite;
+  animation-delay: -7s;
+}
+
+.langIcon:nth-child(2){
+  left: 25%;
+  animation: animate 15s linear infinite;
+  animation-delay: -5s;
+}
+
+.langIcon:nth-child(3){
+  left: 35%;
+  animation: animate 15s linear infinite;
+  animation-delay: 0s;
+}
+
+.langIcon:nth-child(4){
+  left: 50%;
+  animation: animate 15s linear infinite;
+  animation-delay: -10s;
+}
+
+.langIcon:nth-child(5){
+  left: 60%;
+  animation: animate 15s linear infinite;
+  animation-delay: -15s;
+}
+
+.langIcon:nth-child(6){
+  left: 70%;
+  animation: animate 15s linear infinite;
+  animation-delay: -25s;
+}
+
+
+.langIcon:nth-child(7){
+  left: 80%;
+  animation: animate 15s linear infinite;
+  animation-delay: -30s;
+}
+
+
+.langIcon:nth-child(8){
+  left: 90%;
+  animation: animate 15s linear infinite;
+  animation-delay: -5s;
+}
+
+
+.langIcon:nth-child(9){
+  left: 5%;
+  animation: animate 15s linear infinite;
+  animation-delay: 0s;
+}
+
+.langIcon:nth-child(10){
+  left: 10%;
+  animation: animate 15s linear infinite;
+  animation-delay: -5s;
+}
+
+.techLangs:nth-child(1){
+  left: 10%;
+  animation: animate 15s linear infinite;
+  animation-delay: -2s;
+}
+
+.techLangs:nth-child(2){
+  left: 25%;
+  animation: animate 15s linear infinite;
+  animation-delay: -12s;
+}
+
+.techLangs:nth-child(3){
+  left: 35%;
+  animation: animate 15s linear infinite;
+  animation-delay: 0s;
+}
+
+.techLangs:nth-child(4){
+  left: 50%;
+  animation: animate 15s linear infinite;
+  animation-delay: -10s;
+}
+
+.techLangs:nth-child(5){
+  left: 60%;
+  animation: animate 15s linear infinite;
+  animation-delay: -15s;
+}
+
+.techLangs:nth-child(6){
+  left: 70%;
+  animation: animate 15s linear infinite;
+  animation-delay: -25s;
+}
+
+
+.techLangs:nth-child(7){
+  left: 80%;
+  animation: animate 15s linear infinite;
+  animation-delay: -30s;
+}
+
+
+.techLangs:nth-child(8){
+  left: 90%;
+  animation: animate 15s linear infinite;
+  animation-delay: -7s;
+}
+
+
+.techLangs:nth-child(9){
+  left: 5%;
+  animation: animate 15s linear infinite;
+  animation-delay: 0s;
+}
+
+.techLangs:nth-child(10){
+  left: 10%;
+  animation: animate 15s linear infinite;
+  animation-delay: -5s;
+}
+
+@keyframes animate {
+  0%{
+    opacity: 0;
+    top: -10%;
+    transform: translateX(20px) rotate(0deg);
+  }
+  10%{
+    opacity: 1;
+  }
+  20%{
+    transform: translateX(-20px) rotate(45deg);
+  }
+  40%{
+    transform: translateX(-20px) rotate(90deg);
+  }
+  60%{
+    transform: translateX(20px) rotate(180deg);
+  }
+  
+  80%{
+    transform: translateX(-20px) rotate(180deg);
+  }
+  
+  100%{
+    top: 110%;
+    transform: translateX(-20px) rotate(180deg);
+  }
+}
