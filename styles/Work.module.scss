@@ -1,0 +1,73 @@
+@import "../styles/variable.scss";
+
+.work__page {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $primary;
+  padding: 0px 100px;
+  overflow-x: hidden;
+}
+.work__title {
+  margin: 20px 0px;
+  color: $cyan;
+  font-family: $primaryFont;
+}
+.work__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.work {
+  min-width: 250px;
+  height: 250px;
+  background: $light;
+  margin: 10px 0px;
+  position: relative;
+  overflow-y: hidden;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work__upper__overlay,
+.work__lower__overlay {
+  width: 100%;
+  height: 50%;
+  background-color: $cyan;
+  opacity: 0.5;
+  position: absolute;
+  transition: 0.5s;
+}
+.work__upper__overlay {
+  top: -50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.work__lower__overlay {
+  bottom: -50%;
+}
+
+.work:hover .work__upper__overlay {
+  top: 0;
+}
+
+.work:hover .work__lower__overlay {
+  bottom: 0;
+  opacity: 0.4;
+}
+
+.work__view__btn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, 50%) scale(0);
+  margin-top: 27px !important;
+  transition: 0.5s !important;
+}
+.work:hover .work__view__btn {
+  transform: translate(0%, 50%) scale(1);
+}

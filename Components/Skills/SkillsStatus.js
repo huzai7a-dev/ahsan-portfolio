@@ -1,6 +1,7 @@
 import style from "../../styles/Skills.module.scss";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
+import { skills } from "../../Data";
 const animate = (width) => keyframes`
   0% {
     width:0%
@@ -16,60 +17,7 @@ const SkillStatus = styled.div`
   animation: ${animate} 0.8s 0.2s ease-in normal;
 `;
 function SkillsStatus() {
-  const skills = [
-    {
-      name: "React/React-Native",
-      width: "90%",
-      bg: "#61DBFB",
-    },
-    {
-      name: "Vue",
-      width: "70%",
-      bg: "#41B883",
-    },
-    {
-      name: "Flutter",
-      width: "70%",
-      bg: "#50BBEB",
-    },
-    {
-      name: "Node",
-      width: "75%",
-      bg: "#3C873A",
-    },
-    {
-      name: "Golang",
-      width: "60%",
-      bg: "#29BEB0",
-    },
-    {
-      name: "Java",
-      width: "50%",
-      bg: "#E6890E",
-    },
 
-    {
-      name: "TypeScript",
-      width: "90%",
-      bg: "#2F72BC",
-    },
-
-    {
-      name: "Docker",
-      width: "70%",
-      bg: "#1B8AAB",
-    },
-    {
-      name: "SQL",
-      width: "50%",
-      bg: "#2471BD",
-    },
-    {
-      name: "GraphQL",
-      width: "60%",
-      bg: "#D932A2",
-    },
-  ];
   const SkillBar = ({ skill }) => {
     return (
       <div className={style.skillBar}>
